@@ -4,56 +4,18 @@ import './nav.css'
 
 const Navbar = () => {
 
-    const naveLink = <>
-    <NavLink to='/'><li>Home</li></NavLink>
-    <NavLink to='/login'><li>Login</li></NavLink>
-    <NavLink to='/signUp'><li>Register</li></NavLink>
-    <NavLink to='/'><li>Dashbord</li></NavLink>
-   
-      </>
-
     return (
-        <div className="navbar bg-base-100 shadow-sm">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {""}
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu gap-4 menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-            >
-              {
-                 naveLink
-              }
-            </ul>
-          </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {
-               naveLink
-            }
-          </ul>
-        </div>
-        <div className="navbar-end">
-        <a className="btn">Sigin Out</a>
-        </div>
+        <div className="">
+        <div className="flex justify-center items-center gap-4 h-24 bg-[url('https://i.ibb.co/ns8rz9fL/15.jpg')] bg-cover bg-center">
+        <img
+          className="w-10 h-12 object-cover"
+          src="https://media-hosting.imagekit.io/0f23902fe28447de/logo1.png?Expires=1841838294&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=x-yELpuvTQ8C2JXGZxMJjiAbltnOdSqLQjroi4fIOcu1Xl7myr5DO3L9WdkGw3hSx32wHJtcZuA9ZST7TrDzy5~fmbkjceOZael2EV2ZBB0OP1xd61cOlr-~~tBpjbv9~QtRWY5NyejVSZjvntQ-e8pNumG1W2dcfIcxq2EOF2CaPDS7-QqCjtp866eZ9z2wPSBS0BMlne7MkoNFYremQrRFSaU6L-2UVHlz8qviG2OBJoWpxnDr3rQFVOML2onosXPI8vcv6gbBvxLaVVhGqwBdJIqvsljAMnmb5zzNaKI8XO6A0Q2EDnM58dqVVEXORNJoBwPAPZNSvS-fljsnFg_"
+          alt=""
+        />
+        <h4 className="rancho-regular text-white text-4xl font-extrabold">
+          Espresso Emporium
+        </h4>
+      </div>
       </div>
     );
 };
